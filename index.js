@@ -10,7 +10,7 @@ const autoCompleteConfig = {
 		return movie.Title;
 	},
 	async fetchData(search) {
-		const response = await axios.get('http://www.omdbapi.com/', {
+		const response = await axios.get('https://www.omdbapi.com/', {
 			// with axios you can add a second param that is an object that will add the props at the end of the link
 			params: {
 				apikey: 'd675acee',
@@ -45,7 +45,7 @@ createAutoComplete({
 let leftMovie;
 let rightMovie;
 const onMovieSelect = async (movie, summaryElement, side) => {
-	const response = await axios.get('http://www.omdbapi.com/', {
+	const response = await axios.get('https://www.omdbapi.com/', {
 		// with axios you can add a second param that is an object that will add the props at the end of the link
 		params: {
 			apikey: 'd675acee',
